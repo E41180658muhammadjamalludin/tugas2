@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Penulisan Kode Warna CSS</title>
+    <style type="text/css">
+    p.satu {
+    /* Syntak model warna dibawah ini menggunakan Format #RRGGBB. Format penulisan warna #RRGGBB adalah yang paling populer digunakan untuk CSS. 
+    Dimana RR adalah nilai untuk warna merah, GG untuk hijau, dan BB untuk warna biru. Masing-masing nilai ini berisi angka 00 sampai dengan FF. 
+    Kenapa FF? Karena CSS menggunakan angka hexadesimal. FF adalah nilai maksimal, equivalen dengan 255 dalam nilai desimal. kode #0000FF adalah
+    warna biru. */
+    color:#0000FF;
+    }
+    
+    p.dua {
+    /* syntak model warna dibawah ini menggunakan Format #RGB. Format #RGB ditulis 3 digit. #F00 sama dengan #FF0000 atau warna merah */
+    color:#F00;
+    }
+    p.tiga {
+    /* syntak model warna dibawah ini menggunakan Format desimal. Format penulisannya adalah: rgb(0, 160, 255) atau rgb(0%, 63%, 100%), dimana urutan
+    warna adalah merah, hijau, dan biru. Menggunakan format pertama, 255 sama dengan 100%. Jika kita menuliskan nilai diluar dari angka yang seharusnya, yakni 0 – 255 atau 0% – 100% maka CSS secara
+    otomatis akan menyamakannya dengan nilai yang terdekat. Format penulisan warna seperti ini tidak terlalu sering digunakan. */
+    color:rgb(10, 255, 10);
+    }
+    p.empat {
+    /* Selain menggunakan ketiga model yang telah saya sebut diatas. Css warna dapat langsung menyebutkan warna atau 'Kata Warna (Keyword)' dengan menggunakan bahasa inggris. */
+    color:orange;
+    }
+    p.lima{
+    /* nilai property transparent berfungsi akan melewatkan warna dari tag dibelakangnya. */
+    color:transparent;
+    }
+    </style>
+</head>
+<body>
+    <p class="satu">
+    Kalimat ini akan berwarna biru
+    </p>
+    <br />
+    <p class="dua">
+    Kalimat ini akan berwarna merah
+    </p>
+    <br />
+    <p class="tiga">
+    Kalimat ini akan berwarna hijau
+    </p>
+    <br />
+    <p class="empat">
+    Kalimat ini akan berwarna orange
+    </p>
+    <br />
+    <p class="lima">
+    Kalimat ini sepertinya tidak akan terlihat
+    </p>
+</body>
+</html>

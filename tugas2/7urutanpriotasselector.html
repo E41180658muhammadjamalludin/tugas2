@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Kasus Cascading CSS</title>
+    <link rel="stylesheet" type="text/css" href="prioritas.css">
+    <style type="text/css">
+    /* urutan prioritasnya adalah sebagai berikut (dari yang paling kuat):
+    1. Inline style, yakni style yang langsung melekat pada tag.
+    2. Internal style, yakni style yang dideklarasikan pada awal halaman (tag <style>)
+    3. Eksternal style, yakni style yang dideklarasikan pada sebuah file .css , dan dipanggil melalui tag <link> atau @import
+    */
+    h2 {
+    color:red;
+    }
+    </style>
+</head>
+<body>
+    <h2>
+    Akan berwarna apa saya?..1
+    </h2>
+    <!-- tag h2 dibawah ini tulisannya akan berwarna hijau karena inline style. -->
+    <h2 style="color:green">
+    Akan berwarna apa saya?..2
+    </h2>
+</body>
+</html>

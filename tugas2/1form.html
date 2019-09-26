@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Membuat Form </title>
+</head>
+<body>
+    <!-- Tag Form di html di awali dengan tag <form> yang ditutup dengan tag </form> . Pada tag form terdapat 2 atribut
+    penting didalamnya yaitu :
+    1. action : file atau alamat yang akan diproses atau dituju ketika tombol submit ditekan.
+    2. method : menjelaskan bagaimana inputan data dikirim pada suatu form. value Method ada dua yaitu
+       2.1  Get : value  default jika tidak di isi pada atribut method. Pada value ini data yang dikirim akan  terlihat 
+       di url browser dan biasanya digunakan fitur pencarian.
+       2.2  post : data yang terkirim tidak akan terlihat di url browser dan biasanya cocok untuk form yang digunakan mengirim
+       data - data sensisitif seperti password, pin dll. biasanya digunakan diform login, pembayaran, dll. -->
+    <form action=" formulir.html" method="get">
+    <!-- Tag input merupakan tag paling banyak digunakan di dalam form dan memiliki banyak bentuk, mulai dari
+    isian text biasa, text password, checkbox, radio, sampai dengan tombol submit, semuanya dalam bentuk tag <input>
+    yang membedakan bentuknya tergantung pada value di atribut 'type'. 
+    -->
+
+    <!-- Pada tag input dibawah ini  ada 3 atribut.
+    1. atribut 'type'. value text biasanya digunakan pada inputan nama,username dll yang tulisan terlihat dan panjang
+    tulisannya tidak terlalu panjang.
+    2. Atribut 'value' digunakan untuk menampilkan teks di dalam  didalam textbox atau kotak putih.
+    3. Atribut 'name' digunakan untuk proses pengolahan data di bagian backend dan fungsinya juga pembeda antara satu
+    dengan yang lain. -->
+        Nama: <input type="text" name="nama" value="Nama Kamu" />
+        <br />
+    <!-- value 'password' pada atribut 'type' ditag input. Biasanya digunakan untuk inputan data sensitif seperti password , pin dll. ketika
+    user mengetik yang tampil biasa berupa bulatan atau bintang bukan data asli pada textbox. -->
+        Password: <input type="password" name="password" />
+        <br />
+        Jenis Kelamin :
+    <!-- Type 'radio' pada atribut 'type' ditag input. Inputan berupa beberapa pilihan data yang berbentuk bulatan kecil disuatu grup dan user hanya bisa
+    memilih satu aja. Biasanya digunakan untuk data jenis kelamin. Atribut value di type 'radio' berbeda dengan 'text'.Pada type 'radio' fungsinya menyimpan data. Atribut name di type 'radio'
+    valuenya harus sama karena satu grup data. Atribut checked berfungsi menandai atau terpilih otamatis ketika halaman terload.  -->
+        <input type="radio" name="jenis_kelamin" value="laki-laki"checked />
+        Laki - Laki
+        <input type="radio" name="jenis_kelamin" value="perempuan" />
+        Perempuan
+        <br />
+    <!-- Type 'checkbox' pada atribut 'type' ditag input. Inputan berupa beberapa pilihan data disuatu grup yang berbentuk kotak kecil dan user bisa 
+    memilih lebih satu. Atribut name dan checkbox cara kerjanya sama dengan type 'radio', Biasanya digunakan untuk data hobi, makanan dll. -->
+        Hobi: <input type="checkbox" name="hobi_baca" /> Membaca Buku
+        <input type="checkbox" name="hobi_nulis" checked /> Menulis
+        <input type="checkbox" name="hobi_mancing" /> Memancing
+        <br />
+    <!-- tag select digunakan untuk menginput data berupa beberapa pilihan disatu grup yang berbentuk combo box dan user hanya dapat memilih satu pilihan
+    saja. di tag select terdapat 3 atribut yaitu :
+    1. name : digunakan untuk keperluan pengolahan data di bagian backend dan pembeda antara tag select yang satu dengan yang lain.
+    2. value : tempat menyimpan data untuk keperluan pengolahan data di bagian backend.
+    3. selected : pilihan yang otomatis terpilih tanpa user memilih terlebih dahulu ketika halaman web terload. -->
+        Asal Kota:
+        <select name="asal_kota" >
+            <option value="Kota Jakarta"> Jakarta</option>
+            <option>Bandung</option>
+            <option value="Kota Semarang" selected>Semarang</option>
+        </select>
+        <br />
+        Komentar Anda:
+    <!-- tag textarea digunakan untuk menginput data berupa teks yang panjang sekali. Biasanya digunakan pada komentar, artikel, alamat dll. Di tag
+    textarea dibawah ini terdapat 3 atribut yaitu :
+    1. name : digunakan untuk keperluan pengolahan data di bagian backend dan pembeda antara tag textarea yang satu dengan yang lain.
+    2. rows : untuk mengatur tinggi tag textarea.
+    3. cols : untuk mengatur lebar tag textarea. -->
+        <textarea name="komentar" rows="10" cols="30">
+        Silahkan katakan isi hati anda
+        </textarea>
+        <br />
+    <!-- Type 'submit' pada atribut 'type' ditag input berfungsi untuk membuat tombol dan biasanya terletak diakhir form yang digunakan untuk mengirim data.
+    Atribut value di type 'submit' berfungsi memberi nilai ditombol submit. -->
+
+        <input type="submit" value="Mulai Proses!">
+        </form>
+</body>
+</html>
